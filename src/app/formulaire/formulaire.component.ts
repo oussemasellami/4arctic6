@@ -12,12 +12,14 @@ export class FormulaireComponent implements OnInit {
 
   ngOnInit(): void {
       this.formresidence=new FormGroup({
-        id:new FormControl('',Validators.required),
-        name:new FormControl('',Validators.required),
-        address:new FormControl('',Validators.required),
+        id:new FormControl('',[Validators.required,Validators.pattern('^[1-9]*$')]),
+        name:new FormControl('',[Validators.required,Validators.pattern('^[A-Z]{1}[a-zA-Z]*$')]),
+        address:new FormControl('',[Validators.required,Validators.minLength(4),Validators.email]),
 
       })
   }
+
+  get id(){return this.formresidence.get('id')}
 add(){
   console.log(this.formresidence.value)
 }
