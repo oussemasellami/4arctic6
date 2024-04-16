@@ -1,0 +1,36 @@
+<p>formulaire works!</p>
+<div class="container">
+<form [formGroup]="formresidence">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Id:</span>
+        </div>
+        <input type="text" class="form-control" formControlName="id">
+        <div class="alert alert-danger">
+id is invalid
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Name:</span>
+        </div>
+        <input type="text" class="form-control" formControlName="name">
+        <div class="alert alert-danger">
+id is invalid
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Address:</span>
+        </div>
+        <input type="text" class="form-control" formControlName="address">
+        <div class="alert alert-danger">
+id is invalid
+        </div>
+    </div>
+    <br>
+    <input type="submit" class="btn btn-primary" (click)="add()">
+
+
+</form>
+</div>
