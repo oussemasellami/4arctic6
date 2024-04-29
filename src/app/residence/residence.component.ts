@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Residence } from '../models/residence';
 import { Apartment } from '../models/apartment';
+import { AppartmentService } from '../service/appartment.service';
 
 @Component({
   selector: 'app-residence',
@@ -25,6 +26,15 @@ searchsurface!:number
   var1:string="bonjour"
   var2:string="4Arctic6"
   prop:boolean=false
+
+constructor(private appartmentservice:AppartmentService){
+
+
+}
+somme!:number
+show(){
+  this.somme=this.appartmentservice.getnumber(this.listApartments,"floorNum",1)
+}
 
   add(){
     console.log("good add ...")
