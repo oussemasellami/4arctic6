@@ -19,5 +19,14 @@ this.listappart=data
 console.log(JSON.stringify(this.listappart))
       })
   }
+  deleteAppart(id:number){
+    this.appartmetservice.deleteappart(id).subscribe(()=>{
+      console.log(" deleted")
+      window.location.reload()
+    })
+  }
 
+  update(){
+    
+  }
 }

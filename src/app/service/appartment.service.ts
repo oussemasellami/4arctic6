@@ -44,5 +44,10 @@ updateappart(id:any,appart:Apartment):Observable<Apartment[]>{
 
 }
 
+getbyidappart(id:any):Observable<Apartment[]>{
+  return this.http.get<Apartment[]>(this.baseUrl+'/'+id)
+
+}
+
 
 }

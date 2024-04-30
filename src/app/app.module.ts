@@ -13,7 +13,10 @@ import { AppRoutingModule } from './app.routing.module';
 import { AnnonceModule } from './annonce/annonce.module';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import{HttpClientModule} from '@angular/common/http';
-import { AppartmentComponent } from './appartment/appartment.component'
+import { AppartmentComponent } from './appartment/appartment.component';
+import { UpdateApartComponent } from './update-apart/update-apart.component';
+import { AddappartmentComponent } from './addappartment/addappartment.component';
+import { ShowappartComponent } from './showappart/showappart.component'
 
  
 @NgModule({
@@ -25,7 +28,10 @@ import { AppartmentComponent } from './appartment/appartment.component'
     HomeComponent,
     NotfoundComponent,
     FormulaireComponent,
-    AppartmentComponent
+    AppartmentComponent,
+    UpdateApartComponent,
+    AddappartmentComponent,
+    ShowappartComponent
   ],
   imports: [
     BrowserModule,
