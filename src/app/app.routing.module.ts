@@ -9,6 +9,7 @@ import { AppartmentComponent } from './appartment/appartment.component';
 import { UpdateApartComponent } from './update-apart/update-apart.component';
 import { AddappartmentComponent } from './addappartment/addappartment.component';
 import { ShowappartComponent } from './showappart/showappart.component';
+import { ManipulationComponent } from './manipulation/manipulation.component';
 
 
 const ROUTES:Routes=[
@@ -16,6 +17,7 @@ const ROUTES:Routes=[
   {path:"home",component:HomeComponent},
   {path:"residence",component:ResidenceComponent},
   {path:"appartment",component:AppartmentComponent},
+  {path:"manipulation",component:ManipulationComponent},
   {path:"addappart",component:AddappartmentComponent},
   {path:"Formulaire",component:FormulaireComponent},
   {path:"update/:id",component:UpdateApartComponent},

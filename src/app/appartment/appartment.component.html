@@ -1,3 +1,4 @@
+{{ var2 }}
 <a routerLink="/addappart" class="btn btn-primary">Add appartment</a>
 
 <div class="row">
@@ -14,3 +15,8 @@
     </div>
   </div>
 </div>
+
+
+<label for="">votre Nom:</label>
+<input type="text" #name >
+<button (click)="add(name.value)">Envoyer</button>

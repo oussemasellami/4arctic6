@@ -16,7 +16,8 @@ import{HttpClientModule} from '@angular/common/http';
 import { AppartmentComponent } from './appartment/appartment.component';
 import { UpdateApartComponent } from './update-apart/update-apart.component';
 import { AddappartmentComponent } from './addappartment/addappartment.component';
-import { ShowappartComponent } from './showappart/showappart.component'
+import { ShowappartComponent } from './showappart/showappart.component';
+import { ManipulationComponent } from './manipulation/manipulation.component'
 
  
 @NgModule({
@@ -31,7 +32,8 @@ import { ShowappartComponent } from './showappart/showappart.component'
     AppartmentComponent,
     UpdateApartComponent,
     AddappartmentComponent,
-    ShowappartComponent
+    ShowappartComponent,
+    ManipulationComponent
   ],
   imports: [
     BrowserModule,
